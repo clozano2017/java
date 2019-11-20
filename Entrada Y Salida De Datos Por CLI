@@ -1,11 +1,17 @@
 import java.util.Scanner;
 public class LeerDatosCli{
   public static void main(String[]Arg){
+  //Esta clase permite leer datos desde el teclado
   Scanner leer = new Scanner(System.in);
   System.out.print("Digite Su Nombre: ");
+  //leemos el valor y lo almacenamos en la variable nombre
   String nombre = leer.nextLine();
-  System.out.print("Bienvenido a esta su casa : + nombre ");
-  
-  
+  //Mostramos mensaje y luego el valor ingresado
+  System.out.print("Bienvenido a esta su casa : + nombre "); 
+  /**
+  Carlos Eduardo Lozano
+  lozano_moto@hotmail.com
+  3162950230
+  **/
   }
 }
