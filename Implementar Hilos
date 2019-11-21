@@ -1,0 +1,39 @@
+public class DemoHilos extends Thread{
+    
+    private String nombre;
+    
+    public DemoHilos(String nombre)
+    {
+
+    this.nombre = nombre;
+    
+}
+    public void  run(){
+    
+        try {
+            int x = (int)(Math.random()*5000);
+            
+            Thread.sleep(x);
+            
+            System.out.println("Soy el usuario : " + nombre +"(" + x + ")");
+        } catch (Exception ex)
+        {
+            ex.printStackTrace();
+        }
+    }
+    public static void main(String[] args) {
+            DemoHilos n1 = new DemoHilos("Carlos");
+            DemoHilos n2 = new DemoHilos("Miguel");
+            DemoHilos n3 = new DemoHilos("Manuel");
+            
+            n1.start();
+            n2.start();
+            n3.start();
+	System.out.println("Fin del programa!");
+    }
+    /**
+    Carlos Eduardo Lozano
+    lozano_moto@hotmail.com
+    3162950230
+    **/
+ }   
